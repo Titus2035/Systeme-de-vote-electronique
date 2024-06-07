@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../icons/fonts/remixicon.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../jquery.js"></script>
+    <script src="../home.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bulle bulle1"></div>
+        <div class="bulle bulle2"></div>
+        <!-- <div class="bulle bulle4"></div> -->
+        <div class="hsurface">
+            <div class="menu">
+                <div class="logo">LOGO</div>
+                <div class="search">
+                    <span class="sicon"><i class="ri-search-line"></i></span>
+                    <input type="text" class="form form-search" placeholder="Rechercher">
+                </div>
+                <div class="profil">
+                    <div class="name">My Name</div>
+                    <div class="pp"><i class="ri-user-line"></i></div>
+                </div>
+            </div>
+            <div class="hbod">Bienvenue, Alix</div>
+        </div>
+        <div class="bulle bulle3"></div>
+    </header>
+
+    <!-- BODY OF ADMIN PAGE -->
+    <aside>
+        <div class="content">
+            <nav class="nav">
+                <div class="headnav">
+                    <span>Mes élèctions</span>
+                    <a href="#">+</a>
+                </div>
+                <div class="navbod">
+                    <a href="#" class="navlink navlinkx">Election delegue de classe RSD sdsdsdsdsdssd</a>
+                    <a href="#" class="navlink navlinkx active">Election chef de groupe</a>
+                    <a href="#" class="navlink navlinkx">Vote de xxxx</a>
+                </div>
+                
+            </nav>
+            <section>
+                
+                <div class="headsection">
+                    <div class="soussection titlesection">Election chef de groupe</div>
+                    <div class="headsectionlink">
+                        <a href="#" class="navlink lksection lkc resize active" data-id="candidatpage">Candidats</a>
+                        <a href="#" class="navlink lksection lkv resize" data-id="votantpage">Votants</a>
+                    </div>
+                    <div class="soussection btnsection">
+                        <span class="status">En cours...</span>
+                        <button class="btn btn-headaction stopstart"><i class="ri-stop-fill"></i></button>
+                        <button class="btn btn-headaction more"><i class="ri-more-fill"></i></button>
+                        <div class="moremodal">
+                            <a href="#" class="navlink"><i class="ri-share-line"></i> Partager le lien</a>
+                            <a href="#" class="navlink"><i class="ri-user-add-line"></i> Ajouter un candidat</a>
+                            <a href="#" class="navlink"><i class="ri-add-line"></i> Ajouter un votant</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bodsection">
+                    <div class="loaderpage">
+                        <div class="loader"></div>
+                    </div>
+                    
+                    <div class="psection candidatpage">
+                    <div class="box">
+                        <div class="couverture">
+                            <div class="profilcandidat">
+                                <i class="ri-user-line"></i>
+                            </div>
+                        </div>
+                        <div class="infoline">
+                            <div class="infoname">Nom du candidat</div>
+                            <a href="#" class="navlink active">Voir la biographie</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="couverture">
+                            <div class="profilcandidat">
+                                <i class="ri-user-line"></i>
+                            </div>
+                        </div>
+                        <div class="infoline">
+                            <div class="infoname">Nom du candidat</div>
+                            <a href="#" class="navlink active">Voir la biographie</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="couverture">
+                            <div class="profilcandidat">
+                                <i class="ri-user-line"></i>
+                            </div>
+                        </div>
+                        <div class="infoline">
+                            <div class="infoname">Nom du candidat</div>
+                            <a href="#" class="navlink active">Voir la biographie</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="psection votantpage">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nom et prenom</th>
+                                    <th>Email</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr class="gray">
+                                    <td>1</td>
+                                    <td>Nom du candidat</td>
+                                    <td>mail@gmail.com</td>
+                                    <td>
+                                        <a href="#" class="navlink resize2 modif">Modifier</a>
+                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </aside>
+    <div class="ombre"></div>
+</body>
+</html>
