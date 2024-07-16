@@ -1,5 +1,7 @@
 $(document).ready(function(){
     $('.ombre').hide();
+    // $('.step1').hide();
+    // $('.step2').hide();
     $('.votantpage').hide();
     $('.loaderpage').hide();
     $('.more').click(function(){
@@ -38,7 +40,7 @@ $(document).ready(function(){
         setTimeout(function(){
             $('.'+id).show();
             $('.loaderpage').hide();
-        },1000);
+        },10);
        
     })
 
@@ -53,8 +55,58 @@ $(document).ready(function(){
         setTimeout(function(){
             $('.candidatpage').show();
             $('.loaderpage').hide();
-        },1000);
+        },10);
        
+    })
+
+    $('.prev').hide();
+    $('.next').click(function(){
+        let dataid = $(this).attr('data-id');
+        if((parseInt(dataid)+1) <= 3){
+            $('.step'+dataid).css('margin-left', -(435)+'px');
+            $(this).attr('data-id', parseInt(dataid) + 1);
+            $('.prev').attr('data-id', parseInt(dataid) + 1);
+        }
+
+        if(parseInt(dataid) >= 2){
+            $(this).html('Terminer');
+        }else{
+            $(this).html('Suivant <i class="ri-arrow-right-s-line"></i>');
+        }
+
+        if(parseInt(dataid) >= 1){
+            $('.prev').show();
+        }else{
+            $('.prev').hide();
+            // $(this).html('Suivant <i class="ri-arrow-right-s-line"></i>');
+        }
+        
+
+    })
+
+    $('.prev').click(function(){
+        let dataid = $(this).attr('data-id');
+        console.log(dataid);
+        if((parseInt(dataid)) > 1){
+            $('.step'+parseInt(dataid) - 1).css('margin-left', (200)+'px');
+            $(this).attr('data-id', parseInt(dataid) - 1);
+            $('.suiv').attr('data-id', parseInt(dataid) - 1);
+        }
+
+        if(parseInt(dataid) < 2){  
+            $(this).html('Suivant <i class="ri-arrow-right-s-line"></i>');
+        }else{
+            $(this).html('Terminer');
+        }
+
+        if(parseInt(dataid) >= 1){
+            $('.prev').show();
+        }else{
+            $('.prev').hide();
+            // $(this).html('Suivant <i class="ri-arrow-right-s-line"></i>');
+        }
+        
+
     })
 
 });

@@ -121,8 +121,8 @@
                                     <td>Nom du candidat</td>
                                     <td>mail@gmail.com</td>
                                     <td>
-                                        <a href="#" class="navlink resize2 modif">Modifier</a>
-                                        <a href="#" class="navlink resize2 supp">Supprimer</a>
+                                        <a href="#" class="navlink resize2 modif"><i class="ri-edit-2-line"></i></a>
+                                        <a href="#" class="navlink resize2 supp"><i class="ri-delete-bin-line"></i></a>
                                     </td>
                                 </tr>
                                 <tr class="gray">
@@ -394,5 +394,143 @@
         </div>
     </aside>
     <div class="ombre"></div>
+
+    <!-- NEW ELECTION MODAL -->
+
+    <div class="modal modalstep3">
+        <div class="headmodal">
+            <div class="flexline marge">
+                <span class="title">Nouvelle élèction</span>
+                <button class="btnx btn-close"><i class="ri-close-line"></i></button>
+            </div>
+        </div>
+        <div class="bodmodal">
+            <div class="titlestep">
+                <div class="mstitle">Infos votants</div>
+                <a href="#" class="btnlink"><i class="ri-upload-cloud-line"></i> Importer des votants</a>
+            </div>
+            <div class="bodstep">
+                <div class="step step1">
+                    <input type="text" id="titre" class="input" placeholder="Titre de l'élèction">
+                    <label for="date" class="label">Date de lélèction</label>
+                    <input type="date" id="date" class="input" placeholder="Titre de l'élèction">
+                </div>
+
+                <div class="step step2">
+                    <center>
+                        <label for="pp" class="labelpp"><i class="ri-image-add-fill"></i></label>
+                    </center>
+                    <input type="file" name="pp" id="pp" hidden>
+                    <input type="text" id="titre" class="input" placeholder="Nom du candidat">
+                    <textarea id="desc" class="input area" placeholder="Biographie du candidat"></textarea>
+                    <button class="btn btn-padding">Ajouter</button>
+                    <br>
+                    <div class="candidatline">
+                        <br>
+                        <div class="box flex">
+                            <div class="rmbtn"><i class="ri-close-line"></i></div>
+                            <center>
+                                <div class="profilcandidat">
+                                    <i class="ri-user-line"></i>
+                                </div>
+                                <div class="infoname">Nom du candidat</div>
+                            </center>
+                        </div>
+
+                        <div class="box flex">
+                            <div class="rmbtn"><i class="ri-close-line"></i></div>
+                            <center>
+                                <div class="profilcandidat">
+                                    <i class="ri-user-line"></i>
+                                </div>
+                                <div class="infoname">Nom du candidat</div>
+                            </center>
+                        </div>
+
+                        <div class="box flex">
+                            <div class="rmbtn"><i class="ri-close-line"></i></div>
+                            <center>
+                                <div class="profilcandidat">
+                                    <i class="ri-user-line"></i>
+                                </div>
+                                <div class="infoname">Nom du candidat</div>
+                            </center>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+                <div class="step step3">
+                    <input type="text" id="nom" class="input" placeholder="Nom du candidat">
+                    <input type="text" id="email" class="input" placeholder="Email du candidat">
+                    <button class="btn btn-padding">Ajouter</button>
+                    <br><br>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nom et prenom</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nom du candidat</td>
+                                <td>
+                                    <a href="#" class="navlink resize2 supp"><i class="ri-delete-bin-line"></i></a>
+                                </td>
+                            </tr>
+                            <tr class="gray">
+                                <td>Nom du candidat</td>
+                                <td>
+                                    <a href="#" class="navlink resize2 supp"><i class="ri-delete-bin-line"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nom du candidat</td>
+                                <td>
+                                    <a href="#" class="navlink resize2 supp"><i class="ri-delete-bin-line"></i></a>
+                                </td>
+                            </tr>
+                            <tr class="gray">
+                                <td>Nom du candidat</td>
+                                <td>
+                                    <a href="#" class="navlink resize2 supp"><i class="ri-delete-bin-line"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nom du candidat</td>
+                                <td>
+                                    <a href="#" class="navlink resize2 supp"><i class="ri-delete-bin-line"></i></a>
+                                </td>
+                            </tr>
+                            <tr class="gray">
+                                <td>Nom du candidat</td>
+                                <td>
+                                    <a href="#" class="navlink resize2 supp"><i class="ri-delete-bin-line"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footmodal">
+            <div class="flexline marge">
+                <div class="bgroup">
+                    <button class="btn btn-padding prev" data-id="1"><i class="ri-arrow-left-s-line"></i> Precedent</button>
+                    <button class="btn btn-padding next" data-id="1">Suivant <i class="ri-arrow-right-s-line"></i></button>
+                </div>
+               
+               <!-- <div class="loaderpage"> -->
+                    <div class="loader"></div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
